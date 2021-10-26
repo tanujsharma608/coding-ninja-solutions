@@ -1,0 +1,155 @@
+#Conditionals and Loops
+
+
+#Check number
+
+#Given an integer n, find if n is positive, negative or 0. If n is positive, print "Positive"If n is negative, print "Negative",And if n is equal to 0, print "Zero".
+#solution
+n = int(input())
+if n>0:
+    print("Positive")
+elif n<0:
+    print("Negative")
+elif n==0:
+    print("Zero")
+    
+ **********************************************************************************************************************************************************************   
+    
+#Sum of n numbers
+
+#Given an integer n, find and print the sum of numbers from 1 to n.
+#solution
+n=int(input())
+count=1
+sum=0
+while(count<=n):
+    sum=sum+count
+    count=count+1
+print(sum)
+ **********************************************************************************************************************************************************************  
+
+#Sum of Even Numbers
+
+#Given a number N, print sum of all even numbers from 1 to N.
+#solution
+n=int(input())
+i=2
+sum=0
+while(i<=n):
+    sum=sum+i
+    i=i+2
+print(sum)
+ **********************************************************************************************************************************************************************  
+
+#Fahrenheit to Celsius
+
+#solution
+s= int(input())
+e= int(input())
+w= int(input())
+while s<=e:
+    c=(s-32)*5/9
+    print(s,int(c))
+    s=s+w
+ **********************************************************************************************************************************************************************     
+    
+#Calculator
+#solution
+while True:
+    choice=int(input())
+    if choice == 1:
+        num1= int(input())
+        num2= int(input())
+        print(int(num1+num2))
+        
+    elif choice == 2:
+        num1 = int(input())
+        num2 = int(input())
+        print(int(num1 - num2))
+        
+    elif choice == 3:
+        num1= int(input())
+        num2= int(input())
+        print(int(num1*num2))
+        
+    elif choice == 4:
+        num1= int(input())
+        num2= int(input())
+        print(int(num1/num2))
+        
+    elif choice == 5:
+        num1= int(input())
+        num2= int(input())
+        print(int(num1%num2))
+        
+    elif choice ==6:
+        break
+    else:
+        print("Invalid Operation")
+ **********************************************************************************************************************************************************************          
+                
+  #Reverse of a number
+  
+  #solution
+  N=int(input())
+reverse=0
+while N>0:
+    reverse=(reverse*10)+N%10
+    N=N//10
+print(reverse)
+ **********************************************************************************************************************************************************************  
+
+#Palindrome number
+#solution
+n=int(input())
+x=n
+rev=0
+while n>0:
+    rev=(rev*10)+n%10
+    n=n//10
+if x==rev:
+    print("true")
+else:
+    print("false")
+ **********************************************************************************************************************************************************************      
+    
+#Sum of even & odd
+
+#solution
+n= int(input())
+sum_e= 0
+sum_o= 0
+while(n>0):
+    d=n%10
+    rem=d%2
+    if rem ==0:
+        sum_e=sum_e + d
+    else :
+        sum_o=sum_o + d
+        
+    n=n//10
+print(sum_e,sum_o)
+ **********************************************************************************************************************************************************************  
+
+#Nth Fibonacci Number
+
+#solution
+a=0
+b=1
+n=int(input())
+i=2
+while (i<=n):
+    c=a+b
+    a=b
+    b=c
+    i=i+1
+print(b)
+ **********************************************************************************************************************************************************************  
+
+
+
+
+
+
+
+
